@@ -16,7 +16,7 @@ public class UserCommand : IUserCommand
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<int> CreateAsync(UserCommandCreateDto dto)
+    public async Task<int> CreateAsync(UserCommandDto dto)
     {
         var newUser = new Domain.UserData.Users.User(dto.Username, dto.Password);
 

@@ -4,5 +4,5 @@ namespace JSFC.HeldenTaverne.Application.UserService;
 
 public interface IUserCommand
 {
-    Task<int> CreateAsync(UserCommandCreateDto dto);
+    Task<int> CreateAsync(UserCommandDto dto);
 }
