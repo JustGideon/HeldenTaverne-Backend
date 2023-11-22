@@ -1,4 +1,4 @@
-namespace JSFC.HeldenTaverne.Domain.MasterData.CombatTechnique.CombatTechnique;
+namespace JSFC.HeldenTaverne.Domain.MasterData;
 
 /// <summary>
 ///     German: 'Kampftechnikkategorie'

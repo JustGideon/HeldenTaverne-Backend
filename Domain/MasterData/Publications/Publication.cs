@@ -2,7 +2,7 @@ using JSFC.HeldenTaverne.Domain.Common;
 
 namespace JSFC.HeldenTaverne.Domain.MasterData;
 
-public class Skill : MdEntity<Guid>
+public class Publication : Entity<Guid>
 {
-    //TODO
+    public string Name { get; set; }
 }

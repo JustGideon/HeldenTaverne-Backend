@@ -1,6 +1,9 @@
-namespace JSFC.HeldenTaverne.Domain.MasterData.MagicAggr;
+namespace JSFC.HeldenTaverne.Domain.MasterData;
 
-public enum Verbreitung
+/// <summary>
+///     German: 'Verbreitung'
+/// </summary>
+public enum Tradition
 {
     //TODO
 }

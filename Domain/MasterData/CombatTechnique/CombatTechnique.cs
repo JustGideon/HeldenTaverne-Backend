@@ -1,6 +1,6 @@
 using JSFC.HeldenTaverne.Domain.Common;
 
-namespace JSFC.HeldenTaverne.Domain.MasterData.CombatTechnique;
+namespace JSFC.HeldenTaverne.Domain.MasterData;
 
 /// <summary>
 ///     German: 'Kampftechnik'

@@ -1,4 +1,4 @@
-﻿using JSFC.HeldenTaverne.Domain.MasterData.MagicAggr;
+﻿using JSFC.HeldenTaverne.Domain.MasterData;
 using JSFC.HeldenTaverne.Persistence.Config;
 using Microsoft.EntityFrameworkCore;
 using Attribute = Org.BouncyCastle.Asn1.Cms.Attribute;

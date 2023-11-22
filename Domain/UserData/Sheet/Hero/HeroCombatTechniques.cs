@@ -1,5 +1,5 @@
 using JSFC.HeldenTaverne.Domain.Common;
-using JSFC.HeldenTaverne.Domain.MasterData.CombatTechnique;
+using JSFC.HeldenTaverne.Domain.MasterData;
 
 namespace JSFC.HeldenTaverne.Domain.UserData.Sheet.Hero;
 

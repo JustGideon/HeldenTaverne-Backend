@@ -1,4 +1,4 @@
-using JSFC.HeldenTaverne.Domain.MasterData.ImprovementFactor;
+using JSFC.HeldenTaverne.Domain.MasterData;
 using Microsoft.EntityFrameworkCore;
 
 namespace JSFC.HeldenTaverne.Persistence.Config;

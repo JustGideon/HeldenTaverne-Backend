@@ -4,6 +4,6 @@ namespace JSFC.HeldenTaverne.Domain.MasterData;
 
 /// <summary>
 /// </summary>
-public interface IAdvantageRepository : IQueryRepository<Advantage, Guid>
+public interface ICultureRepository : IQueryRepository<Culture, Guid>
 {
 }

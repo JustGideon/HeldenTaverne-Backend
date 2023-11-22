@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Attribute = JSFC.HeldenTaverne.Domain.MasterData.Attribute.Attribute;
+using Attribute = JSFC.HeldenTaverne.Domain.MasterData.Attribute;
 
 namespace JSFC.HeldenTaverne.Persistence.Config;
 

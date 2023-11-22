@@ -1,6 +1,6 @@
 using JSFC.HeldenTaverne.Domain.Common;
 
-namespace JSFC.HeldenTaverne.Domain.MasterData.Vantages;
+namespace JSFC.HeldenTaverne.Domain.MasterData;
 
 /// <summary>
 /// </summary>

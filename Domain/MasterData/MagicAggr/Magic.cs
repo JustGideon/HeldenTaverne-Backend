@@ -1,10 +1,10 @@
 using JSFC.HeldenTaverne.Domain.Common;
 
-namespace JSFC.HeldenTaverne.Domain.MasterData.MagicAggr;
+namespace JSFC.HeldenTaverne.Domain.MasterData;
 
 /// <summary>
 /// </summary>
-public class Magic : Entity<Guid>
+public class Magic : MdEntity<Guid>
 {
     /// <summary>
     /// </summary>
@@ -64,10 +64,10 @@ public class Magic : Entity<Guid>
     /// <summary>
     ///     German: 'Verbreitung'
     /// </summary>
-    public Verbreitung Traditions { get; set; }
+    public Tradition Tradition { get; set; }
 
     /// <summary>
     ///     German: 'Steigerungsfaktor'
     /// </summary>
-    public Steigerungsfaktor ImprovementCost { get; set; }
+    public ImprovementFactor ImprovementFactor { get; set; }
 }

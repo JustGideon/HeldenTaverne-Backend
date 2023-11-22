@@ -1,9 +1,7 @@
-using JSFC.HeldenTaverne.Domain.MasterData.Culture;
-using JSFC.HeldenTaverne.Domain.MasterData.Profession;
-using JSFC.HeldenTaverne.Domain.MasterData.Race;
-using JSFC.HeldenTaverne.Domain.MasterData.Vantages;
+using JSFC.HeldenTaverne.Domain.MasterData;
 using JSFC.HeldenTaverne.Domain.UserData.Sheet.Hero.DerivedCharacteristics;
 using JSFC.HeldenTaverne.Domain.UserData.Sheet.Hero.NestedObjects;
+using Attributes = JSFC.HeldenTaverne.Domain.MasterData.Atrributes;
 
 namespace JSFC.HeldenTaverne.Domain.UserData.Sheet.Hero;
 
@@ -57,7 +55,7 @@ public class Hero
 
     /// <summary>
     /// </summary>
-    public EyeColor EyeColor { get; set; }
+    public string EyeColor { get; set; }
 
     /// <summary>
     /// </summary>
@@ -65,11 +63,11 @@ public class Hero
 
     /// <summary>
     /// </summary>
-    public Socialstatus Socialstatus { get; set; }
+    public string Socialstatus { get; set; }
 
     /// <summary>
     /// </summary>
-    public Homeplace Homeplace { get; set; }
+    public string Homeplace { get; set; }
 
     /// <summary>
     /// </summary>
@@ -79,7 +77,7 @@ public class Hero
     /// </summary>
     public string SkinColor { get; set; }
 
-    public List<HeroAttribute> Attribute { get; set; }
+    public Attributes Atrributes { get; set; }
 
     /// <summary>
     /// </summary>
@@ -91,13 +89,5 @@ public class Hero
 
     /// <summary>
     /// </summary>
-    public HeroAttributes Attributes { get; set; } = new();
-
-    /// <summary>
-    /// </summary>
-    /// <returns></returns>
-    public int Age?{
-        get;
-        set;
-    }
+    public int Age { get; set; }
 }
