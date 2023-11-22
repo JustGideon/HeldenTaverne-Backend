@@ -1,7 +1,6 @@
-﻿using JSFC.HeldenTaverne.Domain.MasterData;
+﻿using JSFC.HeldenTaverne.Domain.UserData.Users;
 using JSFC.HeldenTaverne.Persistence.Config;
 using Microsoft.EntityFrameworkCore;
-using Attribute = Org.BouncyCastle.Asn1.Cms.Attribute;
 
 namespace JSFC.HeldenTaverne.Persistence;
 
@@ -12,10 +11,9 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<WeatherForecast>? WeatherForecasts { get; set; }
-
-    public DbSet<Attribute>? Attributes { get; set; }
-    public DbSet<Magic>? Casts { get; set; }
+    // public DbSet<Attribute>? Attributes { get; set; }
+    // public DbSet<Magic>? Casts { get; set; }
+    public DbSet<User>? Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -26,11 +24,8 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.ApplyConfiguration()
-
-        WeatherForecastConfig.Create(modelBuilder);
-
-        MagicConfig.Create(modelBuilder);
-        MagicConfig.HasData(modelBuilder);
+        // MagicConfig.Create(modelBuilder);
+        // MagicConfig.HasData(modelBuilder);
+        UserConfig.Create(modelBuilder);
     }
 }

@@ -6,15 +6,10 @@ internal class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationDbContext _dbContext;
 
-    public UnitOfWork(
-        ApplicationDbContext dbContext,
-        IWeatherForecastRepository weatherForecastRepository)
+    public UnitOfWork(ApplicationDbContext dbContext)
     {
         _dbContext = dbContext;
-        WeatherForecastRepository = weatherForecastRepository;
     }
-
-    public IWeatherForecastRepository WeatherForecastRepository { get; }
 
     public async Task<int> SaveChangesAsync()
     {
