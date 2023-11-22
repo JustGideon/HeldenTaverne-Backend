@@ -11,8 +11,8 @@ internal class UnitOfWork : IUnitOfWork
         _dbContext = dbContext;
     }
 
-    public async Task<int> SaveChangesAsync()
+    public Task<int> SaveChangesAsync()
     {
-        return await _dbContext.SaveChangesAsync();
+        return _dbContext.SaveChangesAsync();
     }
 }

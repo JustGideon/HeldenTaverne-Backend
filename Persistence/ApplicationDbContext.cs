@@ -11,8 +11,6 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    // public DbSet<Attribute>? Attributes { get; set; }
-    // public DbSet<Magic>? Casts { get; set; }
     public DbSet<User>? Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -24,8 +22,6 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        // MagicConfig.Create(modelBuilder);
-        // MagicConfig.HasData(modelBuilder);
         UserConfig.Create(modelBuilder);
     }
 }

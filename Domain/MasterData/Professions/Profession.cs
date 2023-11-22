@@ -1,9 +1,11 @@
+using JSFC.HeldenTaverne.Domain.Common;
+
 namespace JSFC.HeldenTaverne.Domain.MasterData;
 
 /// <summary>
 ///     https://tde.ulisses-regelwiki.de/professions.html
 /// </summary>
-public class Profession
+public class Profession : MdEntity<Guid>
 {
     /// <summary>
     /// </summary>
